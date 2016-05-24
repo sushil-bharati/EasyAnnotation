@@ -4,7 +4,7 @@
 % The code sucessfully extracts an image per widow and lets you manually annotate 
 % i.e. (manually drag a rectangular box on required object in an image) 
 % via rectangle. Right click then click on "Crop Image" when done. 
-% 'cord_tes.txt' sucesfully records x,y,width and height of the bounding box drawn.
+% 'cord_test.txt' sucesfully records x,y,width and height of the bounding box drawn as you go along multiple images
 
 contents = dir('C:\Images\*.jpg') % input your image dataset directory here with valid extension for image
 fileid = fopen('cord_test.txt','r+');% opens the file to write co-ordinates
