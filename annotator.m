@@ -6,7 +6,7 @@
 % via rectangle. Right click then click on "Crop Image" when done. 
 % 'ground_truth.txt' sucesfully records x1,y1,x2(i.e. x1+width) and y2(i.e. y1+height) of the bounding box drawn as you go along multiple images
 
-contents = dir('your_directory_containing_images') % input your image dataset directory here with valid extension for image
+contents = dir('your_directory_containing_images/*.jpg') % input your image dataset directory here with valid extension for image
 fileid = fopen('ground_truth.txt','w+');% opens the file to write co-ordinates
 
 for i = 1 : numel(contents)
