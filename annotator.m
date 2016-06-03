@@ -4,7 +4,7 @@
 % The code sucessfully extracts an image per widow and lets you manually annotate 
 % i.e. (manually drag a rectangular box on required object in an image) 
 % via rectangle. Right click then click on "Crop Image" when done. 
-% 'cord_test.txt' sucesfully records x1,y1,x2(i.e. x1+width) and y2(i.e. y1+height) of the bounding box drawn as you go along multiple images
+% 'ground_truth.txt' sucesfully records x1,y1,x2(i.e. x1+width) and y2(i.e. y1+height) of the bounding box drawn as you go along multiple images
 
 contents = dir('your_directory_containing_images') % input your image dataset directory here with valid extension for image
 fileid = fopen('ground_truth.txt','w+');% opens the file to write co-ordinates
